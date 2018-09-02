@@ -1,0 +1,65 @@
+log for feature engineering
+
+featured-2
+	obj: aqi
+	data: pollute 
+	process: drop + extract + transform(log) + dummy
+
+
+featured-31
+	obj: pm2.5
+	data: pollute + meteorology 
+	process: drop + transform(log) + dummy
+
+
+featured-32 £¨magic£©
+	obj: pm2.5
+	data: pollute + meteorology 
+	process: drop + transform(log) + dummy
+
+
+featured-33 £¨magic£©
+	obj: pm2.5
+	data: pollute + meteorology 
+	process: drop + extraction + transform(log + dummy)
+
+
+featured-41 £¨original fit extraction£©
+	obj: pm2.5
+	data: pollute + meteorology 
+	process: drop + extraction
+
+
+featured-42
+	obj: pm2.5
+	data: pollute + meteorology 
+	process: drop + extraction + dummy
+
+
+featured-43
+	obj: pm2.5
+	data: pollute + meteorology 
+	process: drop + extraction + transform(log) + dummy
+
+
+featured-52 (function fit extraction)
+	obj: pm2.5
+	data: pollute + meteorology 
+	process: drop + extraction + dummy
+
+
+featured-53
+	obj: pm2.5
+	data: pollute + meteorology 
+	process: drop + extraction + transform(log) + dummy
+
+
+mlp-data
+	obj: pm2.5
+	data: pollute + meteorology 
+	process: drop + extraction + transform(log) + dummy + lasso feature selection
+
+
+
+
+
